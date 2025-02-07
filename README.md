@@ -1,4 +1,6 @@
 # terraform-datadog-modules
 KO Technologies Terraform Datadog Modules
 
-[Child Organization](modules/child-organizations/README.md)
+Modules <br />
+[Child Organizations](modules/child-organizations)<br />
+[Teams](modules/teams)<br />
