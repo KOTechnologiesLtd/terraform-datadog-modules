@@ -6,7 +6,7 @@ terraform {
       version = ">= 3.54.0"
     }
     assert = {
-      source = "hashicorp/assert"
+      source  = "hashicorp/assert"
       version = "0.15.0"
     }
   }
