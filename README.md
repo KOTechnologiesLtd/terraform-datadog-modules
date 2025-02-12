@@ -16,8 +16,15 @@ provider "datadog" {
 }
 ```
 
-Modules <br />
-[Child Organizations](modules/child-organizations)<br />
+# Terragrunt
+If you're using Terragrunt or using CI/CD you might find that the module reference needs to be simlar to the example below.
+```
+...
+source = "tfr:///KOTechnologiesLtd/modules/datadog//modules/api-key?version=1.0.2"
+...
+```
+# Modules <br />
+### [Child Organizations](modules/child-organizations)<br />
 ```
 ...
 source = "git::git@github.com:KOTechnologiesLtd/terraform-datadog-modules.git//modules/child-organizations"
@@ -34,7 +41,7 @@ child_organization = {
   }
   ...
 ```
-[Teams](modules/teams)<br />
+### [Teams](modules/teams)<br />
 ```
 ...
 source = "git::git@github.com:KOTechnologiesLtd/terraform-datadog-modules.git//modules/teams"
@@ -48,6 +55,20 @@ team = {
       name = "Team2"
       description = "Team two"
       handle = "teamtwo"
+    },
+  }
+  ...
+```
+### [API Keys](modules/api-keys)<br />
+```
+...
+source = "git::git@github.com:KOTechnologiesLtd/terraform-datadog-modules.git//modules/api-keys"
+api_key = {
+    key1 = {
+      name = "EC2"
+    },
+    key2 = {
+      name = "Lambda"
     },
   }
   ...
