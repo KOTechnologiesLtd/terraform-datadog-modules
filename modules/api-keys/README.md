@@ -31,4 +31,4 @@ No modules.
 
 | Name | Description |
 |------|-------------|
-| <a name="output_api_keys"></a> [api\_keys](#output\_api\_keys) | n/a |
+| <a name="output_api_key"></a> [api\_key](#output\_api\_key) | n/a |
