@@ -10,3 +10,12 @@ variable "team" {
   }
   description = "A MAP Object of Datadog Teams"
 }
+variable "team_authn" {
+  type = map(object({
+    key   = string
+    value = string
+    role  = optional(string, null)
+    team  = optional(string, null)
+  }))
+  description = "A MAP Object of Datadog Teams AuthN Mapping. Role & Team Conflict. Map keys must match var.team"
+}
