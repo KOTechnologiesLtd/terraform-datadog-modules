@@ -17,5 +17,6 @@ variable "team_authn" {
     role  = optional(string, null)
     team  = optional(string, null)
   }))
+  default = {}
   description = "A MAP Object of Datadog Teams AuthN Mapping. Role & Team Conflict. Map keys must match var.team"
 }
