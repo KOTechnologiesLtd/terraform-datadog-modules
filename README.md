@@ -82,3 +82,12 @@ inputs = {
 }
   ...
 ```
+### [MonitorsJson](modules/monitors-json)<br />
+```
+...
+source = "git::git@github.com:KOTechnologiesLtd/terraform-datadog-modules.git//modules/monitors-json"
+inputs = {
+  monjsonfiles = fileset(".", "./monitors_json/*.json")
+}
+  ...
+```
