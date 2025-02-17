@@ -20,7 +20,7 @@ No modules.
 
 | Name | Type |
 |------|------|
-| [datadog_dashboard_json.dashjson](https://registry.terraform.io/providers/DataDog/datadog/latest/docs/resources/dashboard_json) | resource |
+| [datadog_dashboard_json.dashjsonfiles](https://registry.terraform.io/providers/DataDog/datadog/latest/docs/resources/dashboard_json) | resource |
 
 ## Inputs
 
@@ -32,4 +32,4 @@ No modules.
 
 | Name | Description |
 |------|-------------|
-| <a name="output_dashboards"></a> [dashboards](#output\_dashboards) | n/a |
+| <a name="output_dashjsonfiles"></a> [dashjsonfiles](#output\_dashjsonfiles) | n/a |
