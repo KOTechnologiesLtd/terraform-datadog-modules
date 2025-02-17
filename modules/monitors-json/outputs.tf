@@ -1,3 +1,3 @@
 output "monjsonfiles" {
-  value = { for index, f in var.monjsonfiles : index => datadog_monitor_json.monjsonfiles[index].url }
+  value = { for index, f in var.monjsonfiles : f => datadog_monitor_json.monjsonfiles[f].id }
 }
