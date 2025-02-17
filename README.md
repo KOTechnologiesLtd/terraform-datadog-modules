@@ -73,3 +73,12 @@ api_key = {
   }
   ...
 ```
+### [DashboardsJson](modules/dashboards-json)<br />
+```
+...
+source = "git::git@github.com:KOTechnologiesLtd/terraform-datadog-modules.git//modules/dashboards-json"
+inputs = {
+  dashjsonfiles = fileset(".", "./dashboard_json/*.json")
+}
+  ...
+```
